@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "jquery"; 
+import { Link } from "react-router-dom";
+
+
 
 function Home() {
+  useEffect(() => {
+    $(".progress-bar").each(function () {
+      var progressValue = $(this).attr("aria-valuenow");
+      $(this).animate({ width: progressValue + "%" }, 1500);
+    });
+  }, []); 
     return (
         <>
             <header className="top-area">
@@ -11,7 +21,7 @@ function Home() {
                                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                     <i className="fa fa-bars"></i>
                                 </button>
-                                <a className="navbar-brand" href="index.html">Sabbir</a>
+                                <Link className="navbar-brand" to="/">Sabbir</Link>
                             </div>
                             <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                 <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
@@ -84,7 +94,7 @@ function Home() {
                     </div>
                     <div class="col-sm-offset-1 col-sm-5">
                       <div class="single-about-img">
-                        <img src="assets/images/about/profile_image.jpg" alt="profile_image" />
+                        <img src="/assets/images/about/profile_image.jpg" alt="profile_image" />
                         <div class="about-list-icon">
                           <ul>
                             <li>
@@ -210,114 +220,200 @@ function Home() {
 
 		        </section>
 
-            <section id="skills" class="skills">
-              <div class="skill-content">
-                <div class="section-heading text-center">
+            <section id="skills" className="skills">
+              <div className="skill-content">
+                <div className="section-heading text-center">
                   <h2>skills</h2>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="single-skill-content">
-                        <div class="barWrapper">
-                          <span class="progressText">adobe photoshop</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                  
-                              </div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">adobe photoshop</span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
                             </div>
-                            <h3>90%</h3>	
+                            <h3>90%</h3>
                           </div>
                         </div>
-                        <div class="barWrapper">
-                          <span class="progressText">adobe illustrator</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                  
-                              </div>
-                            </div>
-                            <h3>85%</h3>	
-                          </div>
-                        </div>
-                        <div class="barWrapper">
-                          <span class="progressText">adobe after effects</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                
-                              </div>
-                            </div>
-                            <h3>97%</h3>	
-                          </div>
-                        </div>
-                        <div class="barWrapper">
-                          <span class="progressText">sketch</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                  
-                              </div>
-                            </div>
-                            <h3>90%</h3>	
-                          </div>
-                        </div>
+                        {/* Repeat other skills similarly */}
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="single-skill-content">
-                        <div class="barWrapper">
-                          <span class="progressText">html 5</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                
-                              </div>
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">html 5</span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
                             </div>
-                            <h3>90%</h3>	
+                            <h3>90%</h3>
                           </div>
                         </div>
-                        <div class="barWrapper">
-                          <span class="progressText">css 3 animation</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                  
-                              </div>
-                            </div>
-                            <h3>85%</h3>	
-                          </div>
-                        </div>
-                        <div class="barWrapper">
-                          <span class="progressText">communication</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                
-                              </div>
-                            </div>
-                            <h3>97%</h3>	
-                          </div>
-                        </div>
-                        <div class="barWrapper">
-                          <span class="progressText"> creativity</span>
-                          <div class="single-progress-txt">
-                            <div class="progress ">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style={{ marginRight: '10px' }}>
-                                  
-                              </div>
-                            </div>
-                            <h3>90%</h3>	
-                          </div>
-                        </div>
+                        {/* Repeat other skills similarly */}
                       </div>
                     </div>
                   </div>
-                </div>		
+                </div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">adobe illustrator</span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">css 3 animation
+                          </span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">adobe after effects</span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">communication
+                          </span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">sketch</span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="">
+                        <div className="barWrapper">
+                          <span className="progressText">creativity
+                          </span>
+                          <div className="single-progress-txt">
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="10"
+                                aria-valuemax="100"
+                                style={{ width: "0%" }} // Initial width to 0%
+                              ></div>
+                            </div>
+                            <h3>90%</h3>
+                          </div>
+                        </div>
+                        {/* Repeat other skills similarly */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-		        </section>
+            </section>
 
             <section id="experience" class="experience">
               <div class="section-heading text-center">
@@ -632,7 +728,7 @@ function Home() {
 
                         <div class="col-sm-4">
                           <div class="item">
-                            <img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
+                            <img src="/assets/images/portfolio/p1.jpg" alt="portfolio image"/>
                             <div class="isotope-overlay">
                               <a href="#">
                                 ui/ux design
@@ -640,7 +736,7 @@ function Home() {
                             </div>
                           </div>
                           <div class="item">
-                            <img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
+                            <img src="/assets/images/portfolio/p2.jpg" alt="portfolio image"/>
                             <div class="isotope-overlay">
                               <a href="#">
                                 ui/ux design
@@ -651,7 +747,7 @@ function Home() {
 
                         <div class="col-sm-4">
                           <div class="item">
-                            <img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
+                            <img src="/assets/images/portfolio/p3.jpg" alt="portfolio image"/>
                             <div class="isotope-overlay">
                               <a href="#">
                                 web design
@@ -662,7 +758,7 @@ function Home() {
 
                         <div class="col-sm-4">
                           <div class="item">
-                            <img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
+                            <img src="/assets/images/portfolio/p4.jpg" alt="portfolio image"/>
                             <div class="isotope-overlay">
                               <a href="#">
                                 web development
@@ -670,7 +766,7 @@ function Home() {
                             </div>
                           </div>
                           <div class="item">
-                            <img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
+                            <img src="/assets/images/portfolio/p5.jpg" alt="portfolio image"/>
                             <div class="isotope-overlay">
                               <a href="#">
                                 web development
@@ -695,7 +791,7 @@ function Home() {
                   <div class="owl-carousel owl-theme" id="client">
                     <div class="item">
                       <a href="#">
-                      <img src="/assets/images/clients/c1.png" alt="brand-image" />
+                      <img src="./assets/images/clients/c1.png" alt="brand-image" />
                       </a>
                     </div>
                     <div class="item">
@@ -843,3 +939,7 @@ function Home() {
 }
 
 export default Home;
+
+
+
+

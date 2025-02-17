@@ -1,14 +1,21 @@
-import './about.css';
-import Header from "./Header";
+import React, { Component } from "react";
 
-function About() {
-    return (
-        <main className="home-container about">
-             <Header />
-            <h1>Welcome to the about Page</h1>
-            <p>Explore our website and discover amazing content.</p>
-        </main>
-    );
+class About extends Component {
+    constructor(props) {  
+        super(props);
+        this.state = {
+            name: "Sabbir",
+            year: 34
+        };
+    }
+
+    render() {  
+        return (
+            <div>
+                <h1>My name is  {this.state.name}  im    {this.state.year}  years old</h1>
+            </div>
+        );
+    }
 }
 
 export default About;

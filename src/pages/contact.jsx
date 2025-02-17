@@ -1,15 +1,11 @@
-import './contact.css';
-import Header from "./Header";
+import React from 'react';
 
-
-function contact() {
+function Contact() {
     return (
-        <main className="home-container contact">
-                <Header />
-            <h1>Welcome to the contact Page</h1>
-            <p>Explore our website and discover amazing content.</p>
-        </main>
+        <div>
+            <h1>Contact Page</h1>
+        </div>
     );
 }
 
-export default contact;
+export default Contact;
