@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import $ from "jquery"; 
 import { Link } from "react-router-dom";
 
-
-
 function Home() {
   useEffect(() => {
     $(".progress-bar").each(function () {
@@ -11,9 +9,10 @@ function Home() {
       $(this).animate({ width: progressValue + "%" }, 1500);
     });
   }, []); 
-    return (
-        <>
-            <header className="top-area">
+
+  return (
+    <>
+              <header className="top-area">
                 <div className="header-area">
                     <nav className="navbar navbar-default bootsnav navbar-fixed dark no-background">
                         <div className="container">
@@ -934,12 +933,38 @@ function Home() {
               </div>
 			
             </footer>
-        </>
-    );
+      <section>
+        <div className="section-heading text-center"> {/* Fixed class to className */}
+          <h2>My Development</h2>
+        </div>
+
+        <div>
+        <MyDevelopment />
+        <MyDevelopment />
+        <MyDevelopment />
+        <MyDevelopment />
+        </div>
+      </section>
+    </>
+  );
+}
+
+function MyDevelopment() {
+  const stylelist = () => ({
+    width: "25%",
+    height: "200px",
+    padding: "20px",
+    border: "1px solid red",
+    float:"left"
+    
+  });
+
+  return (
+    <div style={stylelist()}> {/* Call the function properly */}
+      <h1>Hello Bangladesh</h1>
+      <p>Bangladesh is a small country</p>
+    </div>
+  );
 }
 
 export default Home;
-
-
-
-
