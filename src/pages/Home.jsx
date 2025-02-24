@@ -934,7 +934,7 @@ function Home() {
 			
             </footer>
       <section>
-        <div className="section-heading text-center"> {/* Fixed class to className */}
+        <div className="section-heading text-center">
           <h2>My Development</h2>
         </div>
 
@@ -952,7 +952,7 @@ function Home() {
 function MyDevelopment() {
   const stylelist = () => ({
     width: "25%",
-    height: "200px",
+    height: "300px",
     padding: "20px",
     border: "1px solid red",
     float:"left"
@@ -960,7 +960,8 @@ function MyDevelopment() {
   });
 
   return (
-    <div style={stylelist()}> {/* Call the function properly */}
+    <div style={stylelist()}>
+      <img src="./assets/develop/2.jpg" alt="brand-image" />
       <h1>Hello Bangladesh</h1>
       <p>Bangladesh is a small country</p>
     </div>

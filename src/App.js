@@ -5,6 +5,7 @@ import Pragment from './pages/pragment';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Clipboard from './pages/clipboard';
 import Keybord from './pages/Keybord';
+import Website from './pages/Website';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Pragment" element={<Pragment />} />
         <Route path="/Clipboard" element={<Clipboard />} />
         <Route path="/Keybord" element={<Keybord />} />
+        <Route path="/Website" element={<Website />} />
       </Routes>
     </BrowserRouter>
   );
