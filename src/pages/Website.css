@@ -5,4 +5,34 @@
 
 .carousel-item{
     background-color: #f3f2f2;
+    
+}
+
+.p{
+    margin-left: 25px;
+}
+.heightt{
+    height: 280px;
+}
+.ShortTitle{
+    font-size: 15px;
+    color: #716f6f;
+    width:90%;
+}
+.longtext{
+    font-size: 20px;
+    color: #0f0f0f;
+}
+.text{
+    font-weight: 900;
+    
+}
+
+.carousel-control-prev-icon{
+    background-image: url(arrow-left-circle-fill.svg) !important;
+    margin-left: -200px;
+}
+.carousel-control-next-icon{
+    background-image: url(arrow-right-circle-fill.svg) !important;
+    margin-right: -200px;
 }

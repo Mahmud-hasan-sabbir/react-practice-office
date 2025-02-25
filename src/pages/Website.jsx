@@ -7,6 +7,8 @@ import Button from "react-bootstrap/Button";
 import "./Website.css";
 
 
+
+
 function Website() {
   return (
     <>
@@ -29,43 +31,66 @@ function Website() {
       </Container>
     </Navbar>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner container">
-    <div class="carousel-item active">
-        <div className="row">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade container" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div className="row">
             <div className="col-md-6">
-            <img src="./assets/2.jpg" class="d-block w-100" alt="..." />
+            <img src="assets/2.jpg" class="d-block w-100 heightt" alt="..." />
             </div>
             <div className="col-md-6">
-                <p className='ShorTitle'>Lorem5: HTML5 Lorem Ipsum</p>
-                <h3>Lorem ipsum dolor sit amet, consectetaur</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p className="ShortTitle">Lorem ipsum dolor sit</p>
+              <h5 className="longtext">Lorem ipsum dolor sit amet, consectetaur adipisicing </h5>
+              <p className="ShortTitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam.</p>
+              <p className="text">Pellentesque habitant</p>
+              <p>25-02-2025</p>
 
-                    Pellentesque habitant morbi tristique senectus et
-                </p>
-                <p>Goal craft Programmer</p>
-                <p>24 Feb,2025</p>
             </div>
+          </div>
+        
         </div>
-     
-    </div>
+        <div class="carousel-item ">
+          <div className="row">
+            <div className="col-md-6">
+            <img src="assets/3.jpg" class="d-block w-100 heightt" alt="..." />
+            </div>
+            <div className="col-md-6">
+              <p className="ShortTitle">Icon Information System</p>
+              <h5 className="longtext">Icon Information System Ltd. </h5>
+              <p className="ShortTitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam.</p>
+              <p className="text">Pellentesque habitant</p>
+              <p>25-02-2025</p>
 
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="carousel-item ">
+          <div className="row">
+            <div className="col-md-6">
+            <img src="assets/imageone.jpg" class="d-block w-100 heightt" alt="..." />
+            </div>
+            <div className="col-md-6">
+              <p className="ShortTitle">Next Steps</p>
+              <h5 className="longtext">Lorem ipsum dolor sit amet, consectetaur adipisicing </h5>
+              <p className="ShortTitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam.</p>
+              <p className="text">Pellentesque habitant</p>
+              <p>25-02-2025</p>
+
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"         data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
     </>
   );
 }
