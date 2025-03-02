@@ -36,3 +36,28 @@
     background-image: url(arrow-right-circle-fill.svg) !important;
     margin-right: -200px;
 }
+.card {
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.recentpost{
+    margin-top: 20px;
+   
+}
+.card-text{
+    padding: 10px;
+}
+.card-title{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-shadow: 1px 1px;
+}

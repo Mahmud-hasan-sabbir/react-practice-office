@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Website.css";
+import Contact from "./contact";
 
 function Website() {
   const [shorttitle] = useState([
@@ -81,7 +82,7 @@ function Website() {
             </div>
           </div>
 
-          {/* Third Slide */}
+         
           <div className="carousel-item">
             <div className="row">
               <div className="col-md-6">
@@ -108,6 +109,26 @@ function Website() {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
+
+      <div className="container">
+      <h3 className="recentpost">Recent Post</h3>
+        <div className="row">
+        
+            <Contact img="assets/2.jpg" title="card one"></Contact>
+            <Contact img="assets/3.jpg" title="card two"></Contact>
+            <Contact img="assets/imageone.jpg" title="card three"></Contact>
+            <Contact img="assets/imageone.jpg" title="card four"></Contact>
+         
+       
+        
+        </div>
+      </div>
+      
+
+    
+     
+
+    
     </>
   );
 }
