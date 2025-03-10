@@ -1,5 +1,5 @@
 
-
+import Header from "./Header";
 
 function Clipboard() {
     const textCopy = () => {
@@ -18,6 +18,8 @@ function Clipboard() {
         console.log("Text has been past successfully");
      };
     return (
+        <>
+        <Header />
         <div className="header">
             <p onCopy={textCopy}>
                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -33,6 +35,7 @@ function Clipboard() {
             
            
         </div>
+        </>
     );
 }
 

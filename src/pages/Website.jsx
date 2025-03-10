@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Website.css";
 import Contact from "./contact";
+import Header from "./Header";
 
 function Website() {
   const [shorttitle] = useState([
@@ -23,26 +24,7 @@ function Website() {
 
   return (
     <>
-      <Navbar expand="lg" style={{ backgroundColor: "skyblue" }}>
-        <Container>
-          <Navbar.Brand href="#" style={{ color: "black", fontWeight: "bold" }}>
-            Navbar
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">About</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
-              <Nav.Link href="#">Gallery</Nav.Link> {/* Fixed Spelling */}
-            </Nav>
-            <Form className="d-flex">
-              <Form.Control type="search" placeholder="Search" className="me-2" />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+       <Header />
 
       <div id="carouselExampleFade" className="carousel slide carousel-fade container" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -114,10 +96,10 @@ function Website() {
       <h3 className="recentpost">Recent Post</h3>
         <div className="row">
         
-            <Contact img="assets/2.jpg" title="card one"></Contact>
-            <Contact img="assets/3.jpg" title="card two"></Contact>
-            <Contact img="assets/imageone.jpg" title="card three"></Contact>
-            <Contact img="assets/imageone.jpg" title="card four"></Contact>
+            <Contact img="assets/2.jpg" title="card one" button="overall"></Contact>
+            <Contact img="assets/3.jpg" title="card two" button="view"></Contact>
+            <Contact img="assets/imageone.jpg" title="card three" button="Show"></Contact>
+            <Contact img="assets/imageone.jpg" title="card four" button="Detail"></Contact>
          
        
         

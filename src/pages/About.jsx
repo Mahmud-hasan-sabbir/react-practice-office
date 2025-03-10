@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Header from "./Header";
 
 class About extends Component {
     constructor(props) {  
@@ -29,6 +30,7 @@ class About extends Component {
     render() {  
         return (
             <>
+             <Header />
                 <h1>My name is {this.state.name}, I'm a {this.state.prof.title1}, and I work as a {this.state.prof.title2}.</h1>
                 <button 
                     onClick={this.changeValue.bind(this)}
