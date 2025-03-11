@@ -15,3 +15,13 @@
     color: rgb(46, 45, 45);
     text-decoration: none;
 }
+
+.active{
+    color: #f60606 !important;
+}
+.nav-item a {
+    text-decoration: none;
+    color: rgb(148, 146, 146);
+ 
+}
+

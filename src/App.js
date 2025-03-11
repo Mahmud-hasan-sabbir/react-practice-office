@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Clipboard from './pages/clipboard';
 import Keybord from './pages/Keybord';
 import Website from './pages/Website';
+import Error from './pages/Error';
+import Registration from './pages/Registration';
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/Clipboard" element={<Clipboard />} />
         <Route path="/Keybord" element={<Keybord />} />
         <Route path="/Website" element={<Website />} />
+        <Route path="/Registration" element={<Registration />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

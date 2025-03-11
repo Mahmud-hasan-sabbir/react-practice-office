@@ -12,11 +12,7 @@ function Contact(props) {
                <a href="#" className="btn btn-success">{props.button}</a>
            </div>
         </div>
-           
-  
-       
-      
- 
+
     );
 }
 

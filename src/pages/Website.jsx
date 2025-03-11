@@ -95,14 +95,10 @@ function Website() {
       <div className="container">
       <h3 className="recentpost">Recent Post</h3>
         <div className="row">
-        
             <Contact img="assets/2.jpg" title="card one" button="overall"></Contact>
             <Contact img="assets/3.jpg" title="card two" button="view"></Contact>
             <Contact img="assets/imageone.jpg" title="card three" button="Show"></Contact>
             <Contact img="assets/imageone.jpg" title="card four" button="Detail"></Contact>
-         
-       
-        
         </div>
       </div>
       
