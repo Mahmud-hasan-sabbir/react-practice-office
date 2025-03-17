@@ -100,9 +100,6 @@ function Website() {
             <Contact img="assets/3.jpg" title="card two" button="view"></Contact>
             <Contact img="assets/imageone.jpg" title="card three" button="Show"></Contact>
             <Contact img="assets/imageone.jpg" title="card four" button="Detail"></Contact>
-         
-       
-        
         </div>
       </div>
       

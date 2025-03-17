@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import Header from "./Header";
+
 
 function Contact(props) {
     return (
@@ -9,7 +12,7 @@ function Contact(props) {
 
                <h5 className="card-title">{props.title}</h5>
                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" className="btn btn-success">{props.button}</a>
+               <Link to="Detail" className="btn btn-success">{props.button}</Link>
            </div>
         </div>
 
