@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Header";
+import UseEffect from './UseEffect';
 
 
 const Registration = () => {
@@ -36,6 +37,10 @@ const Registration = () => {
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
+
+        <UseEffect />
+
+       
         </>
     );
 };

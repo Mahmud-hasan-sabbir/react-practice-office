@@ -26,7 +26,7 @@ function App() {
         <Route path="/Keybord" element={<Keybord />} />
         <Route path="/Website" element={<Website />} />
         <Route path="/Registration" element={<Registration />} />
-        <Route path="/UseEffect" element={<UseEffect />} />
+       
       
         <Route path="*" element={<Error />} />
       </Routes>
